@@ -1,0 +1,566 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+:root {
+    --primary-color: #007bff; /* A vibrant blue for accents, links, buttons */
+    --secondary-color: #28a745; /* A complementary green for success/action */
+    --text-color: #333; /* Dark gray for main text */
+    --light-text-color: #555; /* Slightly lighter gray for secondary text */
+    --bg-color: #f8f8f8; /* Light background for body */
+    --card-bg-color: #fff; /* White background for cards/sections */
+    --border-color: #eee; /* Light gray for borders/separators */
+    --shadow-color: rgba(0, 0, 0, 0.1); /* Subtle shadow color */
+    --dark-bg-color: #2c3e50; /* Dark blue/gray for footer */
+    --dark-text-color: #f2f2f2; /* Light text on dark backgrounds */
+}
+
+/* Basic Reset & Font (Update this section to use variables) */
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color); /* Use variable */
+    color: var(--text-color); /* Use variable */
+    line-height: 1.6;
+}
+
+
+/* Header Styling (like Rammaheshwari's clean header) */
+header {
+    background-color: var(--card-bg-color);
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border-color);
+    text-align: center;
+    box-shadow: 0 1px 3px var(--shadow-color); /* Add subtle shadow to header */
+}
+
+
+header h1 {
+    margin: 0;
+    font-size: 2.8em; /* Slightly larger name */
+    color: var(--primary-color);
+    font-weight: 700; /* Use bold font weight for name */
+    letter-spacing: -0.03em; /* Slightly tighter letter spacing */
+}
+
+header p { /* Style for "Software Engineer | Full-Stack Developer" */
+    font-size: 1.2em;
+    color: var(--light-text-color);
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+
+/* Navigation Styling */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* More space between nav items */
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--light-text-color);
+    font-weight: 600; /* Semi-bold for nav links */
+    font-size: 1.15em; /* Slightly larger nav links */
+    padding: 5px 0; /* Add vertical padding for clickable area */
+    transition: color 0.3s ease, border-bottom 0.3s ease; /* Smooth transition for hover */
+    border-bottom: 2px solid transparent; /* Transparent border for hover effect */
+}
+
+
+nav ul li a:hover {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color); /* Underline effect on hover */
+}
+
+
+/* Main Content Area */
+main {
+    max-width: 1000px;
+    margin: 60px auto; /* More top/bottom margin */
+    padding: 0 20px; /* Padding for left/right inside main */
+    /* background-color: var(--card-bg-color); Remove individual main background, sections will have it */
+    /* border-radius: 8px; */
+    /* box-shadow: 0 2px 4px var(--shadow-color); */
+}
+
+
+section {
+    background-color: var(--card-bg-color); /* White background for each section */
+    padding: 50px; /* More generous padding inside sections */
+    margin-bottom: 40px; /* More space below each section */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--shadow-color); /* Stronger shadow for sections */
+    border: 1px solid var(--border-color); /* Subtle border */
+}
+
+section:last-child {
+    margin-bottom: 0; /* No margin for the very last section */
+    border-bottom: 1px solid var(--border-color); /* Ensure last section still has a border if it's the only one */
+}
+
+h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 40px; /* More space below section headings */
+    font-size: 2.5em;
+    font-weight: 700;
+    position: relative; /* For potential underline effect */
+    padding-bottom: 15px; /* Space for underline */
+}
+
+h2::after { /* Pseudo-element for a subtle underline under H2 */
+    content: '';
+    display: block;
+    width: 60px; /* Short underline */
+    height: 4px;
+    background-color: var(--primary-color);
+    margin: 10px auto 0; /* Center the underline */
+    border-radius: 2px;
+}
+
+/* About Page Specific Styles */
+.education-item,
+.experience-item {
+    background-color: var(--bg-color); /* Lighter background for these items */
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Lighter shadow */
+}
+
+.education-item h3,
+.experience-item h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.6em;
+    font-weight: 600;
+}
+
+.education-item p,
+.experience-item p {
+    font-size: 1.05em;
+    color: var(--light-text-color);
+    margin-bottom: 10px;
+    text-align: left; /* Ensure text aligns left here */
+}
+
+.education-item ul,
+.experience-item ul {
+    list-style: disc; /* Use standard bullet points */
+    margin-left: 25px; /* Indent list items */
+    padding-left: 0;
+    margin-top: 15px;
+}
+
+.education-item li,
+.experience-item li {
+    margin-bottom: 8px;
+    color: var(--text-color);
+    font-size: 1em;
+}
+/* Ensure general list styles also apply */
+ul li {
+    line-height: 1.5; /* Good line height for all lists */
+}
+
+
+p {
+    line-height: 1.7; /* Slightly more line height for paragraphs */
+    margin-bottom: 20px; /* More space below paragraphs */
+    font-size: 1.1em; /* Slightly larger body text */
+    text-align: justify; /* Justify text for a cleaner block look */
+}
+
+
+/* Image Styling */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 30px auto; /* More margin around main images */
+    border-radius: 12px; /* More rounded corners for main images */
+    box-shadow: 0 4px 8px var(--shadow-color); /* Shadow for images */
+}
+
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 30px;
+    margin-top: 60px;
+    background-color: var(--dark-bg-color); /* Darker footer */
+    color: var(--dark-text-color);
+    font-size: 0.9em;
+}
+
+
+footer a {
+    color: var(--primary-color); /* Use primary color for links */
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* Contact Form Styling */
+.contact-form {
+    max-width: 600px; /* Limit form width */
+    margin: 40px auto; /* Center the form within its section */
+    padding: 30px;
+    background-color: var(--card-bg-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px var(--shadow-color);
+    border: 1px solid var(--border-color);
+}
+
+.form-group {
+    margin-bottom: 20px; /* Space between form fields */
+}
+
+.form-group label {
+    display: block; /* Make labels take full width and stack */
+    margin-bottom: 8px; /* Space between label and input */
+    font-weight: 600;
+    color: var(--text-color);
+    font-size: 1.1em;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: calc(100% - 20px); /* Full width minus padding */
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: 'Inter', sans-serif; /* Ensure font consistency */
+    color: var(--text-color);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+    border-color: var(--primary-color); /* Highlight border on focus */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); /* Subtle glow on focus */
+    outline: none; /* Remove default browser outline */
+}
+
+.form-group textarea {
+    resize: vertical; /* Allow vertical resizing, prevent horizontal */
+}
+
+.submit-button {
+    display: block; /* Make button take full width */
+    width: 100%; /* Or set a specific max-width and margin auto to center */
+    padding: 15px 25px;
+    background-color: var(--primary-color);
+    color: var(--dark-text-color);
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    font-weight: 700;
+    cursor: pointer; /* Indicate it's clickable */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    letter-spacing: 0.05em;
+}
+
+.submit-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px);
+}
+
+/* Responsive adjustments for form */
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group textarea {
+        width: calc(100% - 20px); /* Maintain padding */
+        padding: 10px;
+        font-size: 0.95em;
+    }
+
+    .form-group label {
+        font-size: 1em;
+    }
+
+    .submit-button {
+        padding: 12px 20px;
+        font-size: 1.1em;
+    }
+}
+
+/* Project Cards Styling (for homepage featured projects) */
+/* Project Cards Styling (for homepage featured projects) */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Slightly wider min width for cards */
+    gap: 40px; /* More space between grid items */
+    padding: 30px 0;
+}
+
+.project-card {
+    background-color: var(--card-bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 12px; /* More rounded corners */
+    padding: 25px; /* More padding */
+    text-align: center;
+    box-shadow: 0 4px 8px var(--shadow-color); /* Stronger shadow */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex; /* Use flexbox for vertical content alignment within card */
+    flex-direction: column;
+    justify-content: space-between; /* Pushes content to top/bottom */
+    align-items: center; /* Centers horizontally */
+}
+
+.project-card:hover {
+    transform: translateY(-8px); /* Lift card slightly more on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.project-card h3 {
+    color: var(--primary-color);
+    font-size: 1.6em;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+
+.project-card img {
+    max-width: 90%; /* Larger images within cards */
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+
+.project-card p {
+    font-size: 1em;
+    color: var(--light-text-color);
+    text-align: center; /* Center text within card */
+    flex-grow: 1; /* Allow paragraph to take up available space */
+}
+
+.project-card p strong { /* Style for the 'Technologies' bold text */
+    color: var(--text-color);
+}
+
+.project-card .project-links { /* New container for project links */
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+.project-card a {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--dark-text-color);
+    padding: 10px 20px;
+    margin: 0; /* Remove previous margin */
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.95em;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+.project-card a:hover {
+    background-color: #0056b3; /* Slightly darker blue on hover */
+    transform: translateY(-2px); /* Slight lift on link hover */
+}
+
+
+/* "View All Projects" button (style as a button, not inline anymore) */
+.button {
+    display: inline-block;
+    background-color: var(--secondary-color); /* Green color for the button */
+    color: var(--dark-text-color);
+    padding: 15px 30px; /* Larger padding for button */
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.2em; /* Larger font size */
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+.button:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: translateY(-3px); /* Lift button on hover */
+}
+
+
+/* Project Table Styling (for projects.html) */
+.project-table-container {
+    overflow-x: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px; /* Rounded corners for the container */
+    box-shadow: 0 2px 5px var(--shadow-color); /* Subtle shadow for table container */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    min-width: 600px; /* Ensure table doesn't get too squished on small screens before scrolling */
+}
+
+
+table th, table td {
+    border: 1px solid var(--border-color);
+    padding: 15px; /* More padding for table cells */
+    text-align: left;
+    font-size: 1em;
+}
+
+
+table th {
+    background-color: var(--primary-color);
+    color: var(--dark-text-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    letter-spacing: 0.05em;
+}
+
+
+table tr:nth-child(even) {
+    background-color: #f6f6f6; /* Slightly darker stripe */
+}
+
+table tr:hover {
+    background-color: #e0e0e0; /* More noticeable hover */
+}
+
+
+table td a {
+    color: var(--primary-color);
+    text-decoration: none;
+    margin-right: 15px; /* More space between links */
+    font-weight: 500;
+}
+
+
+table td a:hover {
+    text-decoration: underline;
+}
+
+/* Basic Responsive Adjustments (Mobile first approach) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    header p {
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+        padding-bottom: 10px; /* Add padding at bottom for appearance */
+    }
+
+
+    nav ul li a {
+        font-size: 1.05em;
+    }
+
+    main {
+        margin: 30px auto;
+        padding: 0 15px;
+    }
+
+    section {
+        padding: 30px; /* Reduce section padding on small screens */
+        margin-bottom: 25px;
+    }
+
+
+    h2 {
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+
+    h2::after {
+        width: 40px; /* Smaller underline on mobile */
+        height: 3px;
+    }
+
+    p {
+        font-size: 1em;
+        text-align: left; /* No justify on mobile to prevent awkward spacing */
+    }
+
+    img {
+        margin: 20px auto;
+        border-radius: 8px;
+    }
+
+
+    .project-grid {
+        grid-template-columns: 1fr; /* Single column for cards on small screens */
+        gap: 25px;
+        padding: 15px 0;
+    }
+
+
+    .project-card {
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .project-card h3 {
+        font-size: 1.4em;
+    }
+
+    .project-card img {
+        max-width: 85%;
+    }
+
+    .project-card a {
+        padding: 8px 15px;
+        font-size: 0.85em;
+    }
+
+    .button {
+        padding: 12px 20px;
+        font-size: 1em;
+        border-radius: 6px;
+    }
+    table th, table td {
+        padding: 10px 12px;
+        font-size: 0.9em;
+    }
+
+    
+}
+
+
+
+
+
