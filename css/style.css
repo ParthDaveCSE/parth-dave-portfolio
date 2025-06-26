@@ -562,5 +562,185 @@ table td a:hover {
 
 
 
+    /* --- Project Detail Page Specific Styles --- */
+    .project-detail-page {
+        max-width: 900px; /* Wider content area for detail */
+        margin-top: 40px;
+        margin-bottom: 60px;
+        padding: 0 20px; /* Add some horizontal padding for smaller screens */
+    }
 
+    .project-header {
+        text-align: center;
+        margin-bottom: 40px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid var(--border-color, #eee); /* Use a default if var not defined */
+    }
+
+    .project-title {
+        font-size: 2.8em;
+        color: var(--primary-color, #333);
+        margin-bottom: 10px;
+    }
+
+    .project-tagline {
+        font-size: 1.3em;
+        color: var(--light-text-color, #666);
+        margin-bottom: 20px;
+    }
+
+    .project-meta {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-bottom: 25px;
+        font-size: 0.95em;
+        color: var(--text-color, #555);
+    }
+
+    .project-meta .meta-item strong {
+        color: var(--primary-color, #333);
+    }
+
+    .project-links-detail {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .project-links-detail .button {
+        padding: 12px 25px;
+        font-size: 1.1em;
+    }
+
+    .project-overview img,
+    .project-interactive-demo iframe,
+    .project-video-demo .video-container {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin: 25px auto; /* Center images/videos */
+        display: block; /* Ensure block level for margin auto */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .image-caption {
+        text-align: center;
+        font-style: italic;
+        font-size: 0.9em;
+        color: var(--light-text-color, #777);
+        margin-top: -15px; /* Pull caption closer to image */
+        margin-bottom: 30px;
+    }
+
+    /* For responsive video embeds */
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        height: 0;
+        overflow: hidden;
+        margin-bottom: 30px;
+    }
+
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .project-overview,
+    .project-features,
+    .project-challenges,
+    .project-learnings,
+    .project-interactive-demo,
+    .back-to-projects {
+        margin-bottom: 40px;
+    }
+
+    .project-detail-page h2 {
+        font-size: 2.2em;
+        color: var(--primary-color, #333);
+        margin-top: 35px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid var(--border-color, #ddd);
+        padding-bottom: 10px;
+    }
+
+    .project-detail-page h3 { /* For subheadings within sections */
+        font-size: 1.6em;
+        color: var(--secondary-color, #555);
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+
+    .project-detail-page p,
+    .project-detail-page ul {
+        line-height: 1.7;
+        margin-bottom: 15px;
+        text-align: left;
+    }
+
+    .project-detail-page ul {
+        list-style: disc;
+        margin-left: 25px;
+        padding-left: 0;
+    }
+
+    .project-detail-page ul li {
+        margin-bottom: 8px;
+    }
+
+    .back-to-projects {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .back-to-projects .button {
+        background-color: var(--accent-color, #007bff);
+        color: var(--button-text-color, white);
+    }
+
+    /* Additional style for small-button if you add it to projects.html */
+    .small-button {
+        padding: 8px 15px; /* Smaller padding */
+        font-size: 0.9em;  /* Smaller font size */
+    }
+
+    /* Basic color variables if you want to define them for consistency */
+    /* :root {
+        --primary-color: #333;
+        --secondary-color: #555;
+        --text-color: #444;
+        --light-text-color: #777;
+        --accent-color: #007bff;
+        --accent-hover-color: #0056b3;
+        --background-light: #f9f9f9;
+        --button-text-color: white;
+        --border-color: #eee;
+    } */
+
+    /* Responsive adjustments for smaller screens */
+    @media (max-width: 768px) {
+        .project-detail-page {
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+        .project-title {
+            font-size: 2em;
+        }
+        .project-tagline {
+            font-size: 1.1em;
+        }
+        .project-detail-page h2 {
+            font-size: 1.8em;
+        }
+        .project-detail-page h3 {
+            font-size: 1.3em;
+        }
+    }
+    
 
