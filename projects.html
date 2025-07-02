@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RK056RPQLC"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RK056RPQLC"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -27,79 +26,25 @@
 </head>
 <body>
 
-    <!-- Header Section (Navigation, Logo/Name) -->
     <header>
         <h1>Parth Dave</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li> <!-- Note the change for linking to a section on a different page -->
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li> <!-- Note the change for linking to a section on a different page -->
-            </ul>
+                <li><a href="about.html">About</a></li> <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li> </ul>
         </nav>
     </header>
 
-    <main>
-        <section>
-            <h2>My Complete Project List</h2>
-            <p>A comprehensive list of all the projects I've worked on, from personal endeavors to collaborative efforts.</p>
-
-            <div class="project-table-container">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Year</th>
-                            <th>Project Title</th>
-                            <th>Built With</th>
-                            <th>Links</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>2025</td>
-                            <td>Random Password Generator</td>
-                            <td>HTML, CSS, JavaScript</td>
-                            <td>
-                                <a href="https://github.com/parthdave/password-generator" target="_blank">GitHub</a> | 
-                                <a href="projects/password-generator/index.html" target="_blank">Live Demo</a>
-                                <a href="project-pages/password-generator.html" class="button small-button">Learn More →</a>
-    
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2025</td>
-                            <td>Interactive To-Do List</td>
-                            <td>HTML, CSS, JavaScript</td>
-                            <td>
-                                <a href="https://github.com/parthdave/todo-app" target="_blank">GitHub</a> | 
-                                <a href="projects/todo-app/index.html" target="_blank">Live Demo</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2024</td>
-                            <td>Basic Calculator</td>
-                            <td>HTML, CSS, JavaScript</td>
-                            <td>
-                                <a href="https://github.com/parthdave/basic-calculator" target="_blank">GitHub</a> | 
-                                <a href="projects/basic-calculator/index.html" target="_blank">Live Demo</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2024</td>
-                            <td>Landing Page Redesign</td>
-                            <td>HTML, CSS</td>
-                            <td>
-                                <a href="https://github.com/parthdave/landing-page-redesign" target="_blank">GitHub</a> | 
-                                <a href="projects/landing-page-redesign/index.html" target="_blank">Live Demo</a>
-                            </td>
-                        </tr>
-                        </tbody>
-                </table>
-            </div>
-            
+    <main class="container">
+        <section class="hero-section">
+            <h1>My Projects</h1>
+            <p>A showcase of my work in web development, data science, and machine learning.</p>
         </section>
-    </main>
+
+        <div id="react-projects-root"></div>
+
+        </main>
 
 
     <footer>
@@ -109,6 +54,12 @@
             <a href="https://github.com/ParthDaveCSE" target="_blank">GitHub</a>
         </p>
     </footer>
+
+    <link rel="stylesheet" href="portfolio-react-app/assets/index-Detvd8dR.css">
+
+    <script type="module" src="portfolio-react-app/assets/index-qUglHgUt.js"></script>
+
+    <script src="js/script.js"></script>
 
 </body>
 </html>
