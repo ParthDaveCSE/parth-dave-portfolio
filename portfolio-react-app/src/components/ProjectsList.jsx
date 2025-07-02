@@ -11,7 +11,7 @@ function ProjectsList() {
     // Fetch projects from your backend API
     // IMPORTANT: Use the correct backend API URL.
     // Your backend is running on port 5001, so use http://localhost:5001/api/projects
-    const API_URL = 'https://parth-portfolio-api.onrender.com'; // <--- **ENSURE THIS IS 5001**
+    const API_URL = 'https://parth-portfolio-api.onrender.com/api/projects'; // <--- **ENSURE THIS IS 5001**
 
     fetch(API_URL)
       .then(response => {
